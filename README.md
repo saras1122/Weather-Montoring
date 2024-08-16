@@ -17,6 +17,20 @@ The application provides a single-page interface to monitor weather conditions f
 - **Data Visualization**: Displays daily weather summaries, historical trends, and forecasts using line charts powered by Chart.js.
 - **Summary Storage**: Allows users to save daily weather summaries to a database.
 
+## Design Choices
+
+### 1. **Architecture**
+
+The system adopts a three-tier architecture to separate concerns and enhance scalability:
+
+- **Frontend**: Built with React to provide a dynamic and interactive user interface. React’s component-based architecture allows for reusable components and efficient updates to the UI.
+- **Backend**: Developed using Node.js with Express. This combination provides a lightweight and flexible server environment, suitable for handling API requests and processing data.
+- **Database**: MongoDB is used for its flexible schema design and scalability. It accommodates the dynamic nature of weather data and user configurations, allowing for easy updates and queries.
+
+### 2. **Data Source**
+
+- **OpenWeatherMap API**: Chosen for its comprehensive weather data and widespread use. The API provides real-time and historical weather information, which is essential for the system’s functionality.
+
 # Data Storage:
 
 **MongoDB** was chosen for its flexible schema design and scalability, which is well-suited to handle the dynamic nature of rule changes and modifications in the application
@@ -45,7 +59,7 @@ module.exports = mongoose.model('summaries', userSchema);
 
 ## Setup Instructions
 
-By default, the MongoDB URI and port are present, so you do not need to add different values unless required.
+By default, the MongoDB URI and port are preconfigured, so you do not need to add different values unless required. Additionally, the .env file contains default values for VITE_OPEN_WEATHER_API_KEY and VITE_OPEN_WEATHER_BASE_URL, so you do not need to set these values manually unless you want to change them.
 
 ### Prerequisites
 
@@ -67,6 +81,7 @@ To set up and run the application, you will need the following dependencies:
 - **Frontend Dependencies** (specified in `frontend/package.json`):
   - React
   - Tailwind
+  - Chart.js
 
 ### Step-by-Step Setup
 
@@ -75,8 +90,8 @@ To set up and run the application, you will need the following dependencies:
 Clone the GitHub repository to your local machine using the following command:
 
 ```bash
-git clone <https://github.com/saras1122/Rule_engine_ast.git>
-cd <repository-name>
+git clone <https://github.com/saras1122/Weather-Montoring.git>
+cd <Weather-Montoring>
 ```
 ### Backend Setup
 
