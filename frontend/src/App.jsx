@@ -107,6 +107,7 @@ const App = () => {
   ];
 
   const weatherConditions = {
+    "Mist": "Expect cool weather with misty conditions. Visibility may be significantly reduced, so drive carefully and keep an eye out for pedestrians. It's a good idea to stay indoors if possible, and if you do go outside, wear warm clothing and be cautious of potentially slippery surfaces.",
     "Clear": "Expect mild weather with clear skies. It's a perfect day to enjoy outdoor activities.",
     "Clouds": "Expect overcast skies. A great day for indoor activities or a walk with a light jacket, also chances of rain.",
     "Haze": "Expect mild weather with hazy skies. Visibility may be reduced, so take it easy while outdoors and consider staying hydrated.",
