@@ -102,7 +102,7 @@ cd <Weather-Montoring>
    ```
 2.  **Install Dependencies**
     ```bash
-    npm install
+    npm init
     ```
 3.  **Start the Backend Server**
     ```bash
